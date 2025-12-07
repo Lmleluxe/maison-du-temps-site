@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Sophie M.",
+    "location": "Genève",
+    "rating": 5,
+    "text": "Une expérience absolument unique. Le cadre est raffiné, l'équipe est aux petits soins et les résultats sont visibles immédiatement. Je recommande sans hésitation.",
+    "service": "Soin Anti-Âge Cellulaire",
+    "date": "2024-10"
+  },
+  {
+    "id": "2",
+    "name": "Laurent D.",
+    "location": "Lausanne",
+    "rating": 5,
+    "text": "J'ai découvert la Maison du Temps sur recommandation d'un ami. Le massage Deep Tissue a été d'une efficacité remarquable sur mes tensions chroniques. Un vrai moment de bien-être.",
+    "service": "Massage Deep Tissue",
+    "date": "2024-09"
+  },
+  {
+    "id": "3",
+    "name": "Isabelle V.",
+    "location": "Genève",
+    "rating": 5,
+    "text": "Le Rituel Signature est tout simplement exceptionnel. On se sent transporté dans un autre univers, un havre de paix au cœur de la ville. Merci pour ce moment suspendu.",
+    "service": "Rituel Signature Maison du Temps",
+    "date": "2024-10"
+  },
+  {
+    "id": "4",
+    "name": "Marc T.",
+    "location": "Nyon",
+    "rating": 5,
+    "text": "La précision suisse à son apogée. Chaque détail compte, du vestiaire au soin en passant par l'accueil. Une adresse à garder précieusement.",
+    "service": "Soin Visage Hydratation Intense",
+    "date": "2024-09"
+  }
+]

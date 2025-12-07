@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+    "title": "Maison du Temps",
+    "subtitle": "L'art du soin à Genève",
+    "baseline": "Des rituels d'exception, exécutés avec la précision suisse",
+    "cta": "Réserver votre moment"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "services": "Nos Soins",
+    "face": "Visage",
+    "body": "Corps",
+    "training": "Formations",
+    "about": "La Maison",
+    "brands": "Marques",
+    "prices": "Tarifs",
+    "book": "Réserver",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "address": "Rue du XXXI décembre 52",
+    "city": "1201 Genève, Suisse",
+    "hours": "Lundi–Samedi · 10:00–19:00"
+  }
+}

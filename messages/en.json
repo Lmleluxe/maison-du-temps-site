@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+    "title": "Maison du Temps",
+    "subtitle": "The Art of Care in Geneva",
+    "baseline": "Exceptional rituals, executed with Swiss precision",
+    "cta": "Book your moment"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Our Services",
+    "face": "Face",
+    "body": "Body",
+    "training": "Training",
+    "about": "The Maison",
+    "brands": "Brands",
+    "prices": "Prices",
+    "book": "Book",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "address": "Rue du XXXI décembre 52",
+    "city": "1201 Geneva, Switzerland",
+    "hours": "Monday–Saturday · 10:00–19:00"
+  }
+}

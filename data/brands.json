@@ -1,0 +1,26 @@
+[
+  {
+    "name": "La Prairie",
+    "category": "Cosmétique de Luxe",
+    "description": "Partenaire exclusif pour les soins anti-âge cellulaires",
+    "logo": "/images/brands/la-prairie.svg"
+  },
+  {
+    "name": "Valmont",
+    "category": "Cosmétique Suisse",
+    "description": "Excellence suisse pour les soins du visage",
+    "logo": "/images/brands/valmont.svg"
+  },
+  {
+    "name": "Biologique Recherche",
+    "category": "Cosmétique Professionnelle",
+    "description": "Protocoles sur-mesure et haute performance",
+    "logo": "/images/brands/biologique-recherche.svg"
+  },
+  {
+    "name": "Susanne Kaufmann",
+    "category": "Cosmétique Naturelle",
+    "description": "Soins corps aux plantes alpines",
+    "logo": "/images/brands/susanne-kaufmann.svg"
+  }
+]

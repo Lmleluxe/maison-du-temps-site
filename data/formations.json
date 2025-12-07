@@ -1,0 +1,56 @@
+[
+  {
+    "id": "massage-signature",
+    "title": "Formation Massage Signature Maison du Temps",
+    "duration": "3 jours",
+    "level": "Professionnel confirmé",
+    "priceFrom": 1800,
+    "summary": "Maîtrisez notre protocole exclusif alliant techniques ancestrales et innovations contemporaines.",
+    "description": "Cette formation intensive vous transmet les fondamentaux de notre massage signature : gestuelle précise, rythme, pression et enchaînements. Vous repartirez avec un certificat reconnu et la capacité de reproduire cette expérience unique.",
+    "modules": [
+      "Anatomie et physiologie appliquées",
+      "Gestuelle et posture",
+      "Séquençage et rythme",
+      "Adaptation aux besoins clients",
+      "Mise en situation réelle"
+    ],
+    "nextDates": ["2025-02-10", "2025-04-15", "2025-06-20"],
+    "certification": true
+  },
+  {
+    "id": "soins-visage-avances",
+    "title": "Formation Soins du Visage Avancés",
+    "duration": "5 jours",
+    "level": "Professionnel",
+    "priceFrom": 2500,
+    "summary": "Perfectionnez votre expertise en soins du visage : diagnostic, protocoles anti-âge et techniques manuelles expertes.",
+    "description": "Apprenez à élaborer des protocoles sur-mesure en fonction du diagnostic de peau, à maîtriser les techniques manuelles de lifting et à utiliser les actifs de haute technologie.",
+    "modules": [
+      "Diagnostic de peau approfondi",
+      "Techniques manuelles de lifting",
+      "Protocoles anti-âge",
+      "Actifs haute performance",
+      "Conseil client personnalisé"
+    ],
+    "nextDates": ["2025-03-03", "2025-05-12", "2025-09-08"],
+    "certification": true
+  },
+  {
+    "id": "rituels-corps",
+    "title": "Formation Rituels Corps d'Exception",
+    "duration": "2 jours",
+    "level": "Professionnel",
+    "priceFrom": 1200,
+    "summary": "Créez des expériences sensorielles complètes : gommages, enveloppements et massages corps.",
+    "description": "Découvrez comment orchestrer un rituel corps complet : préparation de la peau, application des soins, enveloppements et finitions. Maîtrisez l'art de créer une parenthèse sensorielle inoubliable.",
+    "modules": [
+      "Techniques d'exfoliation",
+      "Enveloppements thérapeutiques",
+      "Massages corps signature",
+      "Création d'ambiance et rituel",
+      "Gestion du timing"
+    ],
+    "nextDates": ["2025-02-24", "2025-04-28", "2025-07-14"],
+    "certification": true
+  }
+]

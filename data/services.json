@@ -1,0 +1,98 @@
+[
+  {
+    "slug": "rituel-signature-maison-du-temps",
+    "title": "Rituel Signature Maison du Temps",
+    "category": "Massages Signature",
+    "durations": [90, 120],
+    "priceFrom": 220,
+    "summary": "Un enchaînement sur-mesure de gestes précis pour une détente profonde et un éclat retrouvé.",
+    "description": "Notre rituel phare combine les techniques ancestrales et les innovations les plus pointues. Chaque geste est pensé pour libérer les tensions, raviver l'éclat du teint et procurer une sensation de bien-être durable.",
+    "benefits": [
+      "Relâchement musculaire profond",
+      "Éclat et luminosité du teint",
+      "Apaisement du système nerveux",
+      "Sensation de légèreté retrouvée"
+    ],
+    "image": "/images/services/rituel-signature.jpg"
+  },
+  {
+    "slug": "soin-visage-hydratation-intense",
+    "title": "Soin Visage Hydratation Intense",
+    "category": "Soins du Visage",
+    "durations": [60, 90],
+    "priceFrom": 150,
+    "summary": "Un concentré d'hydratation pour une peau repulpée, souple et éclatante.",
+    "description": "Ce soin haute performance associe des actifs hydratants de dernière génération à un massage manuel drainant. Votre peau retrouve confort, élasticité et rayonnement.",
+    "benefits": [
+      "Hydratation profonde et durable",
+      "Peau repulpée et lissée",
+      "Confort immédiat",
+      "Éclat visible"
+    ],
+    "image": "/images/services/soin-visage-hydratation.jpg"
+  },
+  {
+    "slug": "massage-deep-tissue",
+    "title": "Massage Deep Tissue",
+    "category": "Massages Signature",
+    "durations": [60, 90],
+    "priceFrom": 180,
+    "summary": "Un massage profond pour libérer les tensions chroniques et restaurer la mobilité.",
+    "description": "Technique de massage thérapeutique qui cible les couches profondes des muscles et des tissus conjonctifs. Idéal pour soulager les douleurs chroniques et améliorer la posture.",
+    "benefits": [
+      "Libération des tensions profondes",
+      "Amélioration de la posture",
+      "Soulagement des douleurs chroniques",
+      "Meilleure mobilité articulaire"
+    ],
+    "image": "/images/services/massage-deep-tissue.jpg"
+  },
+  {
+    "slug": "rituel-corps-gommage-enveloppement",
+    "title": "Rituel Corps Gommage & Enveloppement",
+    "category": "Rituels Corps",
+    "durations": [90, 120],
+    "priceFrom": 200,
+    "summary": "Un voyage sensoriel pour une peau douce, nourrie et sublimée.",
+    "description": "Ce rituel complet débute par un gommage délicat aux sels marins, suivi d'un enveloppement nourrissant et d'un massage relaxant. La peau est régénérée, le corps apaisé.",
+    "benefits": [
+      "Exfoliation douce et efficace",
+      "Peau soyeuse et lumineuse",
+      "Nutrition intense",
+      "Relaxation profonde"
+    ],
+    "image": "/images/services/rituel-corps.jpg"
+  },
+  {
+    "slug": "soin-anti-age-cellulaire",
+    "title": "Soin Anti-Âge Cellulaire",
+    "category": "Soins du Visage",
+    "durations": [90, 120],
+    "priceFrom": 250,
+    "summary": "Un protocole de pointe pour ralentir les signes du temps et raviver l'éclat de jeunesse.",
+    "description": "Associant des actifs régénérants de haute technologie et des techniques manuelles expertes, ce soin cible les rides, le relâchement cutané et la perte d'éclat pour un effet lifting visible.",
+    "benefits": [
+      "Réduction visible des rides",
+      "Raffermissement du visage",
+      "Teint unifié et lumineux",
+      "Résultats durables"
+    ],
+    "image": "/images/services/soin-anti-age.jpg"
+  },
+  {
+    "slug": "massage-pierres-chaudes",
+    "title": "Massage aux Pierres Chaudes",
+    "category": "Massages Signature",
+    "durations": [90],
+    "priceFrom": 195,
+    "summary": "Une évasion sensorielle grâce à la chaleur apaisante des pierres de basalte.",
+    "description": "Les pierres chaudes libèrent les tensions musculaires tandis que les huiles essentielles nourrissent la peau. Une expérience de détente absolue qui harmonise le corps et l'esprit.",
+    "benefits": [
+      "Détente musculaire profonde",
+      "Amélioration de la circulation",
+      "Apaisement mental",
+      "Sensation de chaleur enveloppante"
+    ],
+    "image": "/images/services/pierres-chaudes.jpg"
+  }
+]

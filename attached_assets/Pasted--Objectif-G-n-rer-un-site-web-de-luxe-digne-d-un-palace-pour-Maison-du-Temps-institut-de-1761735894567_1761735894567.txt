@@ -1,0 +1,218 @@
+# Objectif
+
+Générer **un site web de luxe digne d’un palace** pour **Maison du Temps** — institut de beauté & bien‑être haut de gamme à Genève — mettant l’accent sur l’élégance, la performance, l’accessibilité et le SEO. Le résultat doit être immédiatement déployable.
+
+---
+
+## Contexte & Identité
+
+* **Nom** : Maison du Temps
+* **Activité** : Institut de beauté et de bien‑être haut de gamme (soins du visage, massages signature, rituels corps, parfumerie d’exception, formations professionnelles)
+* **Adresse** : *Rue du XXXI décembre 52, 1201 Genève, Suisse*
+* **Positionnement** : univers palace, calme, précision suisse, excellence du service
+* **Ton** : raffiné, chaleureux, minimaliste, confidentiel
+
+### Direction artistique (à implémenter)
+
+* **Palette** :
+
+  * Fond : ivoire #FBF8F3
+  * Texte principal : anthracite #222222
+  * Accent primaire : bleu nuit profond #0B1A2A
+  * Accent secondaire : vert pin #0E2E2B (utiliser avec parcimonie)
+  * Filets/détails métalliques : or doux (dégradé CSS discret, pas de jaune saturé)
+* **Typographies** :
+
+  * Titres : "Fraunces" (ou "Playfair Display" si Fraunces indisponible)
+  * Corps : "Inter"
+* **Style** : espaces généreux, grilles fluides, micro‑interactions subtiles, ombres très douces, coins arrondis 2xl, iconographie fine (Lucide)
+* **Motif visuel** : discrète horlogerie (aiguilles/guillochage en filigrane), animations au scroll **très légères** (Framer Motion)
+
+---
+
+## Stack & exigences techniques
+
+* **Framework** : Next.js 14 (App Router) + **TypeScript**
+* **UI** : Tailwind CSS + **shadcn/ui** (boutons, cards, sheets, accordions, dialog)
+* **Animations** : Framer Motion (micro‑interactions, reveal on scroll, hover)
+* **Icônes** : lucide-react
+* **i18n** : next-intl (FR par défaut, EN en option)
+* **SEO** : next-seo, sitemap.xml, robots.txt, OpenGraph/Twitter cards, favicons
+* **Analytics** : @vercel/analytics (configuration facultative)
+* **Images** : next/image (optimisées, formats WebP/AVIF), placeholders blur
+* **Contenu** : MDX ou JSON local (sans CMS externe), facile à éditer
+* **Accessibilité** : WCAG 2.2 AA (focus, contrastes, navigation clavier, aria‑labels)
+* **Performance** : Core Web Vitals > 90 (lazy‑load, prefetch, bundle splitting, fonts via next/font)
+* **Sécurité** : validation serveur pour formulaires, honeypot + rate limit basique
+* **Déploiement** : prêt pour Vercel (scripts, env, vercel.json si nécessaire)
+
+---
+
+## Architecture des pages
+
+1. **/** — Accueil
+
+   * Hero pleine largeur avec titre élégant, baseline et CTA « Réserver »
+   * Vidéo courte (muted, autoplay, loop) OU visuel statique ultra‑qualitatif
+   * Sections :
+
+     * Manifesto (3 piliers : Expertise, Sérénité, Précision)
+     * Sélection de soins phares (cartes cliquables)
+     * Signature « Maison du Temps » (rituel exclusif)
+     * Marques partenaires (logos discrets)
+     * Témoignages (carousel lent)
+     * Appel au cadeau (cartes‑cadeaux)
+     * Bloc Adresse & horaires + plan intégré
+
+2. **/soins** — Listing des soins
+
+   * Filtres (Visage, Corps, Massages signature, Rituels, 60/90/120 min)
+   * Cartes luxueuses avec durée, court descriptif, prix « à partir de » et CTA Réserver
+
+3. **/soins/[slug]** — Détail d’un soin
+
+   * Visuel héro
+   * Sections : bienfaits, déroulé, durée, contre‑indications, tarifs, FAQ, CTA sticky
+
+4. **/formations** — Offre de formation professionnelle
+
+   * Présentation, modules, calendrier, certification, formulaire de demande
+
+5. **/maison** — La Maison & Valeurs
+
+   * Histoire, philosophie, expertise, engagement qualité, équipe (portraits sobres)
+
+6. **/marques** — Partenaires & distribution exclusive
+
+7. **/tarifs** — Grille claire (table responsive + accordéon FAQ)
+
+8. **/reservation** — Réservations
+
+   * Intégration booking (ex. Calendly/Cal.com) **ou** formulaire personnalisé (service, date, créneau, coordonnées) avec confirmation
+
+9. **/presse** — Revue de presse & distinctions (logos/mentions)
+
+10. **/contact** — Contact & Accès
+
+    * Coordonnées complètes, plan Google Maps, horaires, formulaire de contact (nom, email, téléphone, sujet, message)
+
+11. **/legal/mentions-legales**, **/legal/politique-confidentialite**, **/cgv**, **/404**
+
+---
+
+## Composants clés (à livrer)
+
+* **Header** sticky translucide avec méga‑menu (Soins, Formations, La Maison, Marques, Tarifs, Réserver)
+* **Footer** palace : NAP, liens légaux, réseaux, newsletter (double opt‑in)
+* **Hero** luxueux avec subtile animation d’aiguilles (CSS/Framer)
+* **Card Soin** (image, titre, durée, extrait, prix, CTA)
+* **Table Tarifs** responsive
+* **Accordion FAQ** (shadcn)
+* **Carousel Témoignages** (auto‑play très lent, navigation clavier)
+* **Section « Cadeaux »** avec callout élégant
+* **Formulaire de réservation** (si pas d’outil externe), validation côté serveur
+* **Toast/Modal de confirmation**
+* **Cookie banner** conforme (consentement analytique optionnel)
+
+---
+
+## Copys de démarrage (FR)
+
+> Utiliser ces textes comme placeholders raffinés. Adapter la casse typographique et les tirets.
+
+**H1 Accueil** : *Maison du Temps* — L’art du soin à Genève
+
+**Baseline** : Des rituels d’exception, exécutés avec la précision suisse.
+
+**Manifesto — 3 piliers**
+
+* **Expertise** — Des protocoles exigeants, des mains expertes, des résultats visibles.
+* **Sérénité** — Un temps suspendu, un cadre feutré, une attention absolue.
+* **Précision** — Chaque geste compte. Chaque détail a du sens.
+
+**CTA principal** : Réserver votre moment
+
+**Section Adresse**
+
+* *Rue du XXXI décembre 52, 1201 Genève*
+* Lundi–Samedi · 10:00–19:00 (placeholders)
+
+**Formations (intro)** : Transmission d’excellence pour praticiennes et établissements haut de gamme.
+
+**Carte‑cadeau (tagline)** : Offrez un temps suspendu.
+
+---
+
+## SEO & Données structurées
+
+* **Balises** : titles uniques, meta‑descriptions raffinées (140–160 caractères), H1 unique/page
+* **Open Graph** : titre, description, image sociale 1200×630
+* **Schema.org** : `LocalBusiness`/`BeautySalon`, `BreadcrumbList`, `FAQPage`, `Product` (soins), `Course`/`Event` (formations)
+* **NAP** complet et cohérent (adresse/horaires) dans le footer
+* **Sitemap** + **robots.txt**
+
+---
+
+## Accessibilité & qualité
+
+* Contraste AA, focus visibles, rôles ARIA, labels explicites
+* Navigation clavier fluide (skip links)
+* Langue `fr-CH`; alternance `en` (switcher dans le header)
+* Tests Lighthouse (Performance, Accessibility, Best Practices, SEO ≥ 90)
+
+---
+
+## Performances
+
+* next/font avec preload
+* Images responsives (sizes), lazy‑load, compression
+* Preload des assets critiques, prefetch des routes au survol
+* Pas d’animations coûteuses sur mobile; réduire le motion si `prefers-reduced-motion`
+
+---
+
+## Contenu & données (exemple JSON)
+
+Créer un fichier `data/services.json` et `data/testimonials.json` avec structure type :
+
+```json
+{
+  "slug": "rituel-signature-maison-du-temps",
+  "title": "Rituel Signature Maison du Temps",
+  "category": "Massages Signature",
+  "durations": [60, 90, 120],
+  "priceFrom": 220,
+  "summary": "Un enchaînement sur-mesure de gestes précis pour une détente profonde.",
+  "benefits": ["Relâchement musculaire", "Éclat du teint", "Apaisement"]
+}
+```
+
+---
+
+## Intégrations (optionnelles)
+
+* Réservations : Calendly/Cal.com **ou** formulaire custom (Node API route) + email de confirmation
+* Newsletter : Resend + react-email (templates transactionnels minimalistes)
+* Carte : Google Maps embed, style discret
+
+---
+
+## Livrables attendus
+
+* Projet Next.js complet + Tailwind + shadcn configuré
+* Pages et composants listés ci‑dessus
+* Données d’exemple (services, tarifs, témoignages)
+* Configuration SEO (next-seo), i18n (next-intl), sitemap/robots
+* Scripts `npm run build` et `npm run start` fonctionnels
+* Instructions README pour éditer contenus (MDX/JSON) et déployer sur Vercel
+
+---
+
+## Critères d’acceptation
+
+* Design perçu « palace » sans tape‑à‑l’œil
+* Temps LCP < 2.5 s sur 4G, CLS ≈ 0
+* Accessibilité AA validée
+* Réactivité parfaite mobile/tablette/desktop
+* Réservation testable (mock si pas d’intégration tierce)
+* Code propre, typé, commenté avec parcimonie
