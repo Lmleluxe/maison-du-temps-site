@@ -5,18 +5,19 @@
     "baseline": "Exceptional rituals, executed with Swiss precision",
     "cta": "Book your moment"
   },
+
   "Navigation": {
-    "home": "Home",
-    "services": "Our Services",
-    "face": "Face",
-    "body": "Body",
+    "services": "Treatments",
+    "face": "Facial treatments",
+    "body": "Body treatments",
     "training": "Training",
-    "about": "The Maison",
+    "about": "The House",
     "brands": "Brands",
+    "massages": "Massages",
     "prices": "Prices",
-    "book": "Book",
-    "contact": "Contact"
+    "book": "Book"
   },
+
   "Footer": {
     "address": "Rue du XXXI décembre 52",
     "city": "1201 Geneva, Switzerland",

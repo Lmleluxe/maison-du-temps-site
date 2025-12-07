@@ -20,8 +20,11 @@ const navigation = [
   { name: "training", href: "/formations" },
   { name: "about", href: "/maison" },
   { name: "brands", href: "/marques" },
+  // 👇 NOUVEL ITEM MENU
+  { name: "massages", href: "/massages" },
   { name: "prices", href: "/tarifs" },
 ];
+
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
