@@ -5,13 +5,20 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
+// 🔥 INTERFACE CORRIGÉE & COMPLÈTE
 interface HeroProps {
   title: string;
   subtitle?: string;
   description?: string;
   className?: string;
   children?: ReactNode;
-  id?: string; // optionnel si tu veux linker l’ancre plus tard
+  id?: string;
+
+  // 👉 Props ajoutées pour ta page Maison
+  city?: string;
+  ctaText?: string;
+  ctaHref?: string;
+  showVideo?: boolean;
 }
 
 export function Hero({
@@ -21,6 +28,10 @@ export function Hero({
   className,
   children,
   id,
+  city,
+  ctaText,
+  ctaHref,
+  showVideo = true,
 }: HeroProps) {
   return (
     <section
@@ -32,26 +43,28 @@ export function Hero({
         className
       )}
     >
-      {/* VIDÉO DE FOND – purement décorative */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-          aria-hidden="true"
-          className="h-full w-full object-cover"
-        >
-          <source src="/videos/video-mainpage.webm" type="video/webm" />
-          <source src="/videos/video-mainpage.mp4" type="video/mp4" />
-        </video>
+      {/* VIDÉO DE FOND – affichée uniquement si showVideo = true */}
+      {showVideo && (
+        <div className="absolute inset-0 z-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+            aria-hidden="true"
+            className="h-full w-full object-cover"
+          >
+            <source src="/videos/video-mainpage.webm" type="video/webm" />
+            <source src="/videos/video-mainpage.mp4" type="video/mp4" />
+          </video>
 
-        {/* Couche de dégradé pour lisibilité du texte */}
-        <div className="absolute inset-0 bg-black/55 md:bg-black/40" />
-      </div>
+          {/* couche de lisibilité */}
+          <div className="absolute inset-0 bg-black/55 md:bg-black/40" />
+        </div>
+      )}
 
-      {/* CONTENU TEXTE */}
+      {/* CONTENU */}
       <div className="container-palace relative z-10 flex min-h-[70vh] flex-col justify-center py-20 md:py-32">
         <div className="max-w-xl md:max-w-2xl">
           {subtitle && (
@@ -67,33 +80,32 @@ export function Hero({
             {title}
           </h1>
 
+          {city && (
+            <p className="text-lg mb-4 opacity-85 tracking-wide">
+              {city}
+            </p>
+          )}
+
           {description && (
             <p className="mb-8 max-w-xl text-sm leading-relaxed text-palace-ivory/80 md:text-lg">
               {description}
             </p>
           )}
 
-          <div className="flex flex-wrap items-center gap-3 md:gap-4">
-            <Link href="/reservation">
-              <Button
-                size="lg"
-                variant="secondary"
-                className="min-w-[210px]"
-              >
-                Réserver votre moment
-              </Button>
-            </Link>
-
-            <Link href="/maison">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-palace-ivory/60 text-palace-ivory hover:bg-palace-ivory hover:text-palace-blue-deep"
-              >
-                Découvrir la Maison du Temps
-              </Button>
-            </Link>
-          </div>
+          {/* CTA si défini */}
+          {(ctaHref || ctaText) && (
+            <div className="flex flex-wrap items-center gap-4">
+              <Link href={ctaHref ?? "#"}>
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="min-w-[210px]"
+                >
+                  {ctaText ?? "Réserver"}
+                </Button>
+              </Link>
+            </div>
+          )}
         </div>
 
         {children && (
