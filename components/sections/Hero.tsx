@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
-// 🔥 INTERFACE CORRIGÉE & COMPLÈTE
+// 🔥 INTERFACE COMPLÈTE & FUTURE-PROOF
 interface HeroProps {
   title: string;
   subtitle?: string;
@@ -14,11 +14,16 @@ interface HeroProps {
   children?: ReactNode;
   id?: string;
 
-  // 👉 Props ajoutées pour ta page Maison
+  // localisation (optionnelle)
   city?: string;
+
+  // CTA (optionnel)
   ctaText?: string;
   ctaHref?: string;
+
+  // vidéo
   showVideo?: boolean;
+  backgroundVideo?: string; // 👈 NOUVELLE PROP
 }
 
 export function Hero({
@@ -32,7 +37,12 @@ export function Hero({
   ctaText,
   ctaHref,
   showVideo = true,
+  backgroundVideo,
 }: HeroProps) {
+  
+  // 👇 VIDEO SOURCE PRIORITAIRE
+  const videoSrc = backgroundVideo ?? "/videos/video-mainpage.mp4";
+
   return (
     <section
       id={id}
@@ -43,7 +53,7 @@ export function Hero({
         className
       )}
     >
-      {/* VIDÉO DE FOND – affichée uniquement si showVideo = true */}
+      {/* VIDÉO DE FOND */}
       {showVideo && (
         <div className="absolute inset-0 z-0">
           <video
@@ -55,8 +65,7 @@ export function Hero({
             aria-hidden="true"
             className="h-full w-full object-cover"
           >
-            <source src="/videos/video-mainpage.webm" type="video/webm" />
-            <source src="/videos/video-mainpage.mp4" type="video/mp4" />
+            <source src={videoSrc} />
           </video>
 
           {/* couche de lisibilité */}
@@ -92,7 +101,6 @@ export function Hero({
             </p>
           )}
 
-          {/* CTA si défini */}
           {(ctaHref || ctaText) && (
             <div className="flex flex-wrap items-center gap-4">
               <Link href={ctaHref ?? "#"}>
